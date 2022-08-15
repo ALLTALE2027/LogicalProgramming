@@ -8,8 +8,9 @@
             Console.WriteLine("Enter the number from below choices to execute a program");
             Console.WriteLine("1. Fibonacci Number");
             Console.WriteLine("2. Perfect Number");
-            Console.WriteLine("3  Prime Number");
-            Console.WriteLine("4  Reverse a number");
+            Console.WriteLine("3. Prime Number");
+            Console.WriteLine("4. Reverse a number");
+            Console.WriteLine("5. Coupon Numbers");
 
             int ans = int.Parse(Console.ReadLine());
 
@@ -31,6 +32,10 @@
                 case 4:
                     ReverseNumber reverse = new ReverseNumber();
                     reverse.Reverse();
+                    break;
+                case 5:
+                    CouponNumbers coupon = new CouponNumbers();
+                    coupon.GetCouponNumbers();
                     break;
                 default:
                     Console.WriteLine("enter the number from given choices");
