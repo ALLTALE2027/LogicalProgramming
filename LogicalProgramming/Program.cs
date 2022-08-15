@@ -11,6 +11,7 @@
             Console.WriteLine("3. Prime Number");
             Console.WriteLine("4. Reverse a number");
             Console.WriteLine("5. Coupon Numbers");
+            Console.WriteLine("6. Stopwatch");
 
             int ans = int.Parse(Console.ReadLine());
 
@@ -36,6 +37,10 @@
                 case 5:
                     CouponNumbers coupon = new CouponNumbers();
                     coupon.GetCouponNumbers();
+                    break;
+                case 6:
+                    Stopwatch stopwatch = new Stopwatch();
+                    stopwatch.watch();
                     break;
                 default:
                     Console.WriteLine("enter the number from given choices");
