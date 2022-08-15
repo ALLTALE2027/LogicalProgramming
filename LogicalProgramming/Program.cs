@@ -9,6 +9,7 @@
             Console.WriteLine("1. Fibonacci Number");
             Console.WriteLine("2. Perfect Number");
             Console.WriteLine("3  Prime Number");
+            Console.WriteLine("4  Reverse a number");
 
             int ans = int.Parse(Console.ReadLine());
 
@@ -26,6 +27,10 @@
                 case 3:
                     var number = new PrimeNumber();
                     number.CheckPrime();
+                    break;
+                case 4:
+                    ReverseNumber reverse = new ReverseNumber();
+                    reverse.Reverse();
                     break;
                 default:
                     Console.WriteLine("enter the number from given choices");
